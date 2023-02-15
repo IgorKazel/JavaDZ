@@ -10,7 +10,7 @@ public class Program {
         System.out.printf("%d * %d = %d", a, b, a * b);
     }
     static void div(int a, int b) {
-        System.out.printf("%d / %d = %f", a, b, (double)a / b);
+        System.out.printf("%d / %d = %.3f", a, b, (double)a / b);
     }
     public static void main(String[] args) {
         Scanner iScanner = new Scanner(System.in);
