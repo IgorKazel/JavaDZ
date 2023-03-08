@@ -23,7 +23,6 @@ public class Program {
                 int p2 = j;
                 int maxLenTemp = 0;
                 while (p1 < arr1.length && p2 < arr2.length && arr1[p1] == arr2[p2]) {
-                    if (arr1[p1] == arr2[p2])
                     maxLenTemp++;
                     if (maxLenTemp > maxLen) {
                         maxLen = maxLenTemp;
