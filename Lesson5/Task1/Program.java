@@ -5,7 +5,7 @@ import java.util.HashSet;
 public class Program {
     public static void main(String[] args) {
         int[] nums1 = new int[] {1,2,3,2,1};
-        int[] nums2 = new int[] {3,2,1,5,7};
+        int[] nums2 = new int[] {6,7,3,2,1};
         System.out.println("Первый массив:");
         System.out.println(Arrays.toString(nums1));
         System.out.println("Второй массив:");
@@ -22,7 +22,8 @@ public class Program {
                 int p1 = i;
                 int p2 = j;
                 int maxLenTemp = 0;
-                while (p1 < arr1.length && p2 <= arr2.length && arr1[p1] == arr2[p2]) {
+                while (p1 < arr1.length && p2 < arr2.length && arr1[p1] == arr2[p2]) {
+                    if (arr1[p1] == arr2[p2])
                     maxLenTemp++;
                     if (maxLenTemp > maxLen) {
                         maxLen = maxLenTemp;
